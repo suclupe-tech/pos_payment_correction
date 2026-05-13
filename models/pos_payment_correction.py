@@ -148,6 +148,9 @@ class PosPaymentCorrection(models.Model):
                 "message": "El método de pago fue actualizado correctamente.",
                 "type": "success",
                 "sticky": False,
+                "next": {
+                    "type": "ir.actions.act_window_close",
+                },
             },
         }
 

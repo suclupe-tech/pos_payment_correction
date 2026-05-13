@@ -28,7 +28,7 @@
         <field name="model">pos.payment.correction</field>
         <field name="arch" type="xml">
 
-            <form string="Corrección Método de Pago" edit="0">
+            <form string="Corrección Método de Pago" create ="0" edit="0">
 
             <header>
 
@@ -38,6 +38,9 @@
                         class="oe_highlight"
                         invisible="estado != 'draft'"/>
 
+                <button string="Cancelar"
+                        special="cancel"
+                        class="btn-secondary"/>
             </header>
 
                 <sheet>
